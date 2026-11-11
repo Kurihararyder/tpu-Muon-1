@@ -1,0 +1,11 @@
+# 可重新產生的輸出（太大或每次執行都會變）
+# flow/work：ORFS 完整輸出，約 2.3 GB（GDS、ODB、SPEF）；用 flow/run_flow.sh 與 flow/run_experiments.sh 重新產生
+flow/work/
+# sim/build：編譯出的 .vvp 與各次模擬 log
+sim/build/
+# 波形：用 bash sim/run.sh --vcd 2 重新產生
+sim/*.vcd
+# RTL 輸出，每次模擬覆寫
+sim/out_rtl*.hex
+__pycache__/
+*.pyc

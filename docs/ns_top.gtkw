@@ -1,0 +1,30 @@
+[*] GTKWave 訊號清單：開啟 sim/ns_top.vcd（以 bash sim/run.sh --vcd 2 產生）後，用 File -> Read Save File 載入
+[dumpfile] "sim/ns_top.vcd"
+[timestart] 0
+@200
+-介面
+@28
+tb_ns_top.clk
+tb_ns_top.ld_we
+tb_ns_top.start
+tb_ns_top.busy
+tb_ns_top.done
+@200
+-ns_ctrl
+@24
+tb_ns_top.dut.u_ctrl.st[2:0]
+tb_ns_top.dut.u_ctrl.it[2:0]
+tb_ns_top.dut.u_ctrl.cmd_op[1:0]
+tb_ns_top.dut.u_ctrl.i[2:0]
+tb_ns_top.dut.u_ctrl.j[2:0]
+@200
+-matmul_core
+@24
+tb_ns_top.dut.u_core.st[2:0]
+tb_ns_top.dut.u_core.k[3:0]
+@28
+tb_ns_top.dut.u_core.mac_en
+tb_ns_top.dut.u_core.mac_clr
+@420
+tb_ns_top.dut.u_core.acc[31:0]
+tb_ns_top.dut.u_core.aa_q[15:0]
